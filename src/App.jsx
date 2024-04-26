@@ -58,7 +58,7 @@ const App =() => {
       <div className="flex items-center justify-between  w-[224px] h-[64px] ps-[8px] pe-[8px] ms-[14px] me-[18px]">
       <div className="flex  items-center ">
           <img
-            src="./src/assets/logo.svg"
+            src="/logo.svg"
             className={`cursor-pointer duration-500 w-[34px] h-[24px] ${
               open && "rotate-[360deg]"
             }`}
