@@ -10,7 +10,7 @@ import clsx from "clsx";
 import { IoCloseOutline } from "react-icons/io5";
 import Datatable from "./Components/DataTable/DataTable";
 import SetttingSideBar from "./Components/SettingSideBar/SetttingSideBar";
-
+// import logo from "../public/logo.svg" 
 
 const App =() => {
   const [open, setOpen] = useState(true);
@@ -118,11 +118,11 @@ const App =() => {
  {/* sidebar mobile menu */}
  <div
           className={clsx(
-            "fixed h-full w-screen lg:hidden bg-black/20  backdrop-blur-sm top-0 right-0 -translate-x-full transition-all overflow-y-auto z-20  dark:bg-[#2f3349]",
+            "fixed h-full w-screen lg:hidden bg-black/20  backdrop-blur-sm top-0 right-0 -translate-x-full transition-all overflow-y-auto z-20  ",
             isSideMenuOpen && "translate-x-0"
           )}
         >
-          <div className="text-black bg-white flex-col absolute left-0 top-0  p-8 gap-8  w-64 flex ">
+          <div className="text-black bg-white dark:bg-[#2f3349] flex-col absolute left-0 top-0  p-8 gap-8  w-64 flex ">
            
 
             {/* Sidebar content for small devices */}
@@ -130,7 +130,7 @@ const App =() => {
               <div className="flex items-center justify-between mb-5">
               <div className="flex gap-2 items-center">
                 <img
-                  src="./src/assets/logo.svg"
+                  src="/logo.svg"
                   className={`cursor-pointer duration-500 w-8 ${
                     open && "rotate-[360deg]"
                   }`}
