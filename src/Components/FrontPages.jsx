@@ -10,7 +10,7 @@ const FrontPage = ({open}) => {
         <Menu>
         {({ opens }) => (
             <>
-                <Menu.Button className={`${opens? "bg-gray-50" : ""} inline-flex  justify-between items-center rounded-md  w-[232px] h-[22px] px-[16px] py-[8px] text-lg  text-[#5d596c] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75 dark:text-[#b6bee3] mb-2 text-[.9375rem]`}>
+                <Menu.Button className={`${opens? "bg-gray-50" : ""} inline-flex  justify-between items-center rounded-md  w-[232px] h-[22px] px-[16px] py-[8px]   text-[#5d596c] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75 dark:text-[#b6bee3] mb-2 text-[.9375rem]`}>
                 <p className="flex items-center gap-2"><span className=" font-medium"> <BiCreditCardFront /> </span> <span className={`${!open ? "hidden-lg" : ""} `}>FrontPages </span></p>
 
                     <MdKeyboardArrowRight 
