@@ -22,18 +22,18 @@ const Datatable = () => {
     )
 
     return (
-        <div className=" sm:overflow-y-scroll ">
+        <div className="  ">
           
-           <DataTable value={products} showGridlines tableStyle={{ }}  className="w-full border-2 border-gray-400 rounded-lg lg:text-xl text-lg ">
+           <DataTable value={products} showGridlines tableStyle={{ }}  className="w-full border-2 border-gray-400 rounded-lg lg:text-xl  dark:bg-[#2f3349] text-lg dark:border-[#434968] dark:text-[#cfd3ec] lg:mt-10 ">
     <Column field="code" header={customHeaderTemplate('Code')} 
-    className="border-2 border-b-0 border-s-0 border-gray-400 p-2 ps-2"></Column>
+    className="border-2 border-b-0 border-s-0 border-gray-400 dark:border-[#434968] p-2 ps-2"></Column>
 
     <Column field="name" header={customHeaderTemplate('Name')} 
-    className='border-2 border-gray-400 p-2 border-b-0'></Column>
+    className='border-2 border-gray-400 p-2 dark:border-[#434968] border-b-0'></Column>
 
-    <Column field="category" header={customHeaderTemplate('Category')} className='border-2 border-gray-400 p-2 border-b-0'></Column>
+    <Column field="category" header={customHeaderTemplate('Category')} className='border-2 border-gray-400 p-2 dark:border-[#434968] border-b-0'></Column>
 
-    <Column field="quantity" header={customHeaderTemplate('Quantity')}className='border-2 border-e-0 border-gray-400 p-2 border-b-0'></Column>
+    <Column field="quantity" header={customHeaderTemplate('Quantity')}className='border-2 border-e-0 border-gray-400 p-2 dark:border-[#434968] border-b-0'></Column>
             </DataTable> 
         </div>
     );

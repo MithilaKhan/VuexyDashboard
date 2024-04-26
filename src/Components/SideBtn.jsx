@@ -7,26 +7,26 @@ const SideBtn = ({open}) => {
     return (
         <div>
           <li 
-          className="flex  rounded-md px-2 py-2 cursor-pointer text-lg font-medium text-[#5d596c] items-center gap-2" >
-             <span className="lg:text-xl text-lg"><MdOutlineMail /> </span> 
+          className="flex  rounded-md w-[232px] h-[22px] px-[16px] py-[8px] cursor-pointer text-[.9375rem]  text-[#5d596c] items-center gap-2 dark:text-[#b6bee3]  mb-2" >
+             <span className="font-medium "><MdOutlineMail /> </span> 
               <span className={`${!open ? "hidden-lg" : ""} `}> Email </span>
             </li>
             
-          <li 
-          className= " flex  rounded-md px-2 py-2 cursor-pointer text-lg font-medium text-[#5d596c] items-center gap-2" >
-             <span className="lg:text-xl text-lg"><PiChats /> </span> 
+            <li 
+          className="flex  rounded-md w-[232px] h-[22px] px-[16px] py-[8px] cursor-pointer text-[.9375rem] text-[#5d596c] items-center gap-2 dark:text-[#b6bee3]  mb-2" >
+             <span className="font-medium "><PiChats /> </span> 
               <span className={`${!open ? "hidden-lg" : ""} `}> Chat </span>
             </li>
 
-          <li 
-          className=" flex  rounded-md px-2 py-2 cursor-pointer text-lg font-medium text-[#5d596c] items-center gap-2" >
-             <span className="lg:text-xl text-lg"><TbCalendar /> </span> 
+            <li 
+          className="flex  rounded-md w-[232px] h-[22px] px-[16px] py-[8px] cursor-pointer text-[.9375rem]  text-[#5d596c] items-center gap-2 dark:text-[#b6bee3] mb-2" >
+             <span className="font-medium "><TbCalendar /> </span> 
               <span className={`${!open ? "hidden-lg" : ""} `}> Calendar </span>
             </li>
 
-          <li 
-          className=" flex  rounded-md px-2 py-2 cursor-pointer text-lg font-medium text-[#5d596c] items-center gap-2" >
-             <span className="lg:text-xl text-lg"><TbLayoutKanban /> </span> 
+            <li 
+          className="flex  rounded-md w-[232px] h-[22px] px-[16px] py-[8px] cursor-pointer text-[.9375rem]  text-[#5d596c] items-center gap-2 dark:text-[#b6bee3] mb-2 " >
+             <span className="font-medium "><TbLayoutKanban /> </span> 
               <span className={`${!open ? "hidden-lg" : ""} `}> Kanban </span>
             </li>
 

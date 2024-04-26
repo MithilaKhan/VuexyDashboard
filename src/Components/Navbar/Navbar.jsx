@@ -11,26 +11,26 @@ const Navbar = ({onMenubarClick ,menubar}) => {
 
     return (
         <div className=" font-sans ">
-            <div className=" navbar backdrop-blur-md bg-white/30 z-0  lg:z-10">
-                <div className="navbar bg-base-100 rounded-md shadow-lg lg:mx-4 mx-2 mt-1 lg:mt-3">
+            <div className=" navbar backdrop-blur-md bg-white/30 dark:bg-black z-0  lg:z-10">
+                <div className="navbar bg-base-100 rounded-md shadow-lg lg:mx-4 mx-2 mt-1 lg:mt-3 dark:bg-[#2f3349]">
                   <div className="flex items-center gap-5 ms-2 ">
 
                   {
                     menubar && ( <div onClick={onMenubarClick} className="lg:hidden">
-                    <RxHamburgerMenu  className="text-3xl cursor-pointer  mr-4 " />
+                    <RxHamburgerMenu  className="text-3xl cursor-pointer  mr-4 dark:text-[#b6bee3] " />
                     </div>)
                   }
                  
 
                   </div>
                 <div className="flex-1 ">
-    <p className=" lg:text-xl text-lg flex items-center gap-3 lg:ms-5  "><span><BsSearch /> </span> 
+    <p className=" lg:text-xl text-lg flex items-center gap-3 lg:ms-5  dark:text-[#b6bee3]"><span><BsSearch /> </span> 
       <span className="text-gray-400 hidden sm:inline text-lg"> Search(Ctrl+/)</span>
       </p>
     
   </div>
-  <div className="flex-none text-[#6f6b7d] items-center lg:gap-5 gap-3">
-    <p className="lg:text-2xl text-lg flex items-center lg:gap-5 gap-3 "> <span><IoLanguageOutline /></span> <span><RiComputerLine /></span> <span><MdOutlineDashboardCustomize/></span> </p>
+  <div className="flex-none text-[#6f6b7d] items-center lg:gap-5 gap-3 dark:text-[#b6bee3]">
+    <p className="lg:text-2xl text-lg flex items-center lg:gap-5 gap-3  "> <span><IoLanguageOutline /></span> <span><RiComputerLine /></span> <span><MdOutlineDashboardCustomize/></span> </p>
 
     <p className="flex items-center lg:text-2xl text-lg relative">
   <IoNotificationsOutline className="" />
@@ -38,7 +38,7 @@ const Navbar = ({onMenubarClick ,menubar}) => {
 </p>
 
 <div className="relative lg:me-5">
-  <div className="lg:w-12 w-8 rounded-full overflow-hidden">
+  <div className="lg:w-11 w-8 rounded-full overflow-hidden">
     <img src={person} alt="Avatar" />
   </div>
   <div className="absolute bottom-0 right-0 p-1 bg-green-500 rounded-full">

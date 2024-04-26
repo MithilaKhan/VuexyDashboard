@@ -50,21 +50,21 @@ const App =() => {
        {/* sidebar for large device  */}
       <div
         className={` ${
-          open ? "w-72" : "w-20 "
-        } hidden lg:block text-black  p-5  pt-8 relative duration-300 overflow-y-scroll`}
+          open ? "w-[276px] " : "w-20 "
+        } hidden lg:block text-black   relative duration-300  dark:bg-[#2f3349] dark:text-[#b6bee3]`}
         onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
       >
-      <div className="flex items-center justify-between mb-7">
-      <div className="flex gap-2 items-center ">
+      <div className="flex items-center justify-between  w-[224px] h-[64px] ps-[8px] pe-[8px] ms-[14px] me-[18px]">
+      <div className="flex  items-center ">
           <img
             src="./src/assets/logo.svg"
-            className={`cursor-pointer duration-500 w-9 ${
+            className={`cursor-pointer duration-500 w-[34px] h-[24px] ${
               open && "rotate-[360deg]"
             }`}
           />
           <h1
-            className={` origin-left text-[#5d596c] font-bold text-2xl duration-200 ${
+            className={` origin-left text-[#5d596c] font-bold text-[1.375rem] duration-200 dark:text-[#b6bee3] ms-[10px] ${
               !open && "scale-0"
             }`}
           >
@@ -73,7 +73,7 @@ const App =() => {
         </div>
 
       <p className={`${!open && "hidden"}   
-            me-3`}
+           w-[16px] h-[16px] `}
             onClick={() => {            
               toggleCircle();
             }}>
@@ -81,11 +81,12 @@ const App =() => {
           </p>
       </div>
         
+        <div className="mx-[14px]">
         <Dropdown open={open} />
         <LayoutDropDown open={open} />
         <FrontPage open={open} />
 
-        <p className={`${!open && "hidden"}  px-2 py-5 text-xl font-medium text-[#8e8a9c]`}>APPS & PAGES</p>
+        <p className={`${!open && "hidden"} mx-[14px]  text-[0.8125rem] font-medium text-[#8e8a9c] dark:text-[#949bbd] uppercase my-3 `}>APPS & PAGES</p>
 
         <ul className="">
           <SideBtn open={open} />
@@ -94,20 +95,30 @@ const App =() => {
         <FrontPage open={open} />
         </ul>
 
- <p className={`${!open && "hidden"}  px-2 py-5 text-xl font-medium text-[#8e8a9c]`}>Components</p>
+ <p className={`${!open && "hidden"} mx-[14px]  text-[0.8125rem] font-medium text-[#8e8a9c] dark:text-[#949bbd] uppercase my-3`}>Components</p>
   <ul className="">
           <SideBtn open={open} />
           <Dropdown open={open} />
         <LayoutDropDown open={open} />
         <FrontPage open={open} />
         </ul>
+        <p className={`${!open && "hidden"} mx-[14px]  text-[0.8125rem] font-medium text-[#8e8a9c] dark:text-[#949bbd] uppercase my-3 `}>APPS & PAGES</p>
+
+<ul className="">
+  <SideBtn open={open} />
+  <Dropdown open={open} />
+<LayoutDropDown open={open} />
+<FrontPage open={open} />
+</ul>
+        </div>
+       
 
       </div>
 
  {/* sidebar mobile menu */}
  <div
           className={clsx(
-            "fixed h-full w-screen lg:hidden bg-black/20  backdrop-blur-sm top-0 right-0 -translate-x-full transition-all overflow-y-auto z-20",
+            "fixed h-full w-screen lg:hidden bg-black/20  backdrop-blur-sm top-0 right-0 -translate-x-full transition-all overflow-y-auto z-20  dark:bg-[#2f3349]",
             isSideMenuOpen && "translate-x-0"
           )}
         >
@@ -120,11 +131,11 @@ const App =() => {
               <div className="flex gap-2 items-center">
                 <img
                   src="./src/assets/logo.svg"
-                  className={`cursor-pointer duration-500 w-9 ${
+                  className={`cursor-pointer duration-500 w-8 ${
                     open && "rotate-[360deg]"
                   }`}
                 />
-                <h1 className="origin-left text-[#5d596c] font-bold text-2xl duration-200">
+                <h1 className="origin-left text-[#5d596c] font-bold text-2xl duration-200 dark:text-[#b6bee3]">
                   Vuexy
                 </h1>
                     
@@ -133,7 +144,7 @@ const App =() => {
               <p>
                     <IoCloseOutline
               onClick={() => setMenu(false)}
-              className=" text-gray-500 text-3xl cursor-pointer"
+              className=" text-gray-500 text-3xl  pe-0 cursor-pointer dark:text-[#b6bee3]"
             />
                     </p>
               </div>
@@ -145,7 +156,7 @@ const App =() => {
               <FrontPage open={open} />
 
               {/* Sidebar items */}
-              <p className="px-2 py-5 text-xl font-medium text-[#8e8a9c]">
+              <p className="px-2 py-5 text-xl font-medium text-[#8e8a9c] dark:text-[#b6bee3]">
                 APPS & PAGES
               </p>
               <ul>
@@ -155,7 +166,7 @@ const App =() => {
                 <FrontPage open={open} />
               </ul>
 
-              <p className="px-2 py-5 text-xl font-medium text-[#8e8a9c]">
+              <p className="px-2 py-5 text-xl font-medium text-[#8e8a9c] dark:text-[#b6bee3]">
                 Components
               </p>
               <ul>
@@ -169,7 +180,7 @@ const App =() => {
         </div>
 
 
-      <div className=" flex-1  bg-base-100 shadow-lg ">
+      <div className=" flex-1  bg-base-100 shadow-lg dark:bg-black ">
         <div className="z-10">
         <Navbar onMenubarClick={toggleSidebar} menubar={true} />
         <div className=" lg:m-5 m-2 lg:mt-8 relative ">

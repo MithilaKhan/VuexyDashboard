@@ -10,11 +10,11 @@ const FrontPage = ({open}) => {
         <Menu>
         {({ opens }) => (
             <>
-                <Menu.Button className={`${opens? "bg-gray-50" : ""} inline-flex w-full justify-between items-center rounded-md  px-2 py-2 text-lg font-medium text-[#5d596c] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75`}>
-                    <p className="flex items-center gap-2"><span className="lg:text-xl text-lg"> <BiCreditCardFront /> </span> <span className={`${!open ? "hidden-lg" : ""} `}>FrontPages </span></p>
+                <Menu.Button className={`${opens? "bg-gray-50" : ""} inline-flex  justify-between items-center rounded-md  w-[232px] h-[22px] px-[16px] py-[8px] text-lg  text-[#5d596c] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75 dark:text-[#b6bee3] mb-2 text-[.9375rem]`}>
+                <p className="flex items-center gap-2"><span className=" font-medium"> <BiCreditCardFront /> </span> <span className={`${!open ? "hidden-lg" : ""} `}>FrontPages </span></p>
 
                     <MdKeyboardArrowRight 
-                        className={`${opens ? 'transform rotate-90' : ''}  h-5 w-5 text-[#5d596c]`}
+                        className={`${opens ? 'transform rotate-90' : ''}  h-5 w-5 text-[#5d596c] ${!open ? "hidden-lg" : ""}`}
                         aria-hidden="true"
                     />
                 </Menu.Button>
@@ -29,14 +29,14 @@ const FrontPage = ({open}) => {
                         leaveFrom="transform opacity-100 scale-100"
                         leaveTo="transform opacity-0 scale-95"
                     >
-        <div className="  mt-2 w-full sm:w-56  rounded-md bg-white  focus:outline-none">
+        <div className="  mt-2 w-full sm:w-56  rounded-md bg-white  focus:outline-none dark:bg-[#2f3349] ">
                             <Menu.Items>
              <Menu.Item>
                                     {({ active }) => (
                                         <button
-                                            className={`${
-                                                active ? 'bg-gradient-to-r from-[#7367f0]  to-[#9b87e3]  text-white' : 'text-[#5d596c]'
-                                            } group flex items-center rounded-md px-4 py-2 text-lg font-medium me-3 w-full`}
+                                             className={`${
+                                                active ? 'bg-gradient-to-r from-[#7367f0]  to-[#9b87e3]   text-white dark:text-white' : 'text-[#5d596c]'
+                                            } group flex items-center rounded-md   text-[.9375rem] font-medium   dark:text-[#b6bee3]  w-[232px] h-[38px] px-[28px]`}
                                         >
                                             {active ? (
                                                 <FaRegCircle
@@ -57,9 +57,9 @@ const FrontPage = ({open}) => {
              <Menu.Item>
                                     {({ active }) => (
                                         <button
-                                            className={`${
-                                                active ? 'bg-gradient-to-r from-[#7367f0]  to-[#9b87e3]  text-white' : 'text-[#5d596c]'
-                                            } group flex items-center rounded-md px-4 py-2 text-lg font-medium me-3 w-full`}
+                                             className={`${
+                                                active ? 'bg-gradient-to-r from-[#7367f0]  to-[#9b87e3]   text-white dark:text-white' : 'text-[#5d596c]'
+                                            } group flex items-center rounded-md   text-[.9375rem] font-medium   dark:text-[#b6bee3]  w-[232px] h-[38px] px-[28px]`}
                                         >
                                             {active ? (
                                                 <FaRegCircle
@@ -80,9 +80,9 @@ const FrontPage = ({open}) => {
              <Menu.Item>
                                     {({ active }) => (
                                         <button
-                                            className={`${
-                                                active ? 'bg-gradient-to-r from-[#7367f0]  to-[#9b87e3]  text-white' : 'text-[#5d596c]'
-                                            } group flex items-center rounded-md px-4 py-2 text-lg font-medium me-3 w-full`}
+                                             className={`${
+                                                active ? 'bg-gradient-to-r from-[#7367f0]  to-[#9b87e3]   text-white dark:text-white' : 'text-[#5d596c]'
+                                            } group flex items-center rounded-md   text-[.9375rem] font-medium   dark:text-[#b6bee3]  w-[232px] h-[38px] px-[28px]`}
                                         >
                                             {active ? (
                                                 <FaRegCircle
@@ -103,9 +103,9 @@ const FrontPage = ({open}) => {
              <Menu.Item>
                                     {({ active }) => (
                                         <button
-                                            className={`${
-                                                active ? 'bg-gradient-to-r from-[#7367f0]  to-[#9b87e3]  text-white' : 'text-[#5d596c]'
-                                            } group flex items-center rounded-md px-4 py-2 text-lg font-medium me-3 w-full`}
+                                             className={`${
+                                                active ? 'bg-gradient-to-r from-[#7367f0]  to-[#9b87e3]   text-white dark:text-white' : 'text-[#5d596c]'
+                                            } group flex items-center rounded-md   text-[.9375rem] font-medium   dark:text-[#b6bee3]  w-[232px] h-[38px] px-[28px]`}
                                         >
                                             {active ? (
                                                 <FaRegCircle
@@ -126,9 +126,9 @@ const FrontPage = ({open}) => {
              <Menu.Item>
                                     {({ active }) => (
                                         <button
-                                            className={`${
-                                                active ? 'bg-gradient-to-r from-[#7367f0]  to-[#9b87e3]  text-white' : 'text-[#5d596c]'
-                                            } group flex items-center rounded-md px-4 py-2 text-lg font-medium me-3 w-full`}
+                                             className={`${
+                                                active ? 'bg-gradient-to-r from-[#7367f0]  to-[#9b87e3]   text-white dark:text-white' : 'text-[#5d596c]'
+                                            } group flex items-center rounded-md   text-[.9375rem] font-medium   dark:text-[#b6bee3]  w-[232px] h-[38px] px-[28px]`}
                                         >
                                             {active ? (
                                                 <FaRegCircle
